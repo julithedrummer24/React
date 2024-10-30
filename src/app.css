@@ -1,0 +1,92 @@
+.card{
+    height: 20%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid  rgba(255, 255, 255, 0);
+    transition: all 300ms ease-in-out;
+}
+
+.card:hover{
+    border: 1px solid rgba(255, 255, 255, 0.247);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.247);
+}
+
+.cardHead{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardHead .avatarCard{
+    width: 48px;
+    height: 48px ;
+    border-radius: 50%;
+}
+
+.bodyCard{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.bodyCard strong{
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.bodyCard span{
+    font-size: .8rem;
+}
+
+.footerCard{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footerCard button{
+    border-radius: 50px;
+    padding: 5px 8px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    transition: all 200ms ease-in-out;
+}
+
+.footerCard button:hover{
+    background-color: rgb(40, 143, 138);
+}
+
+.footerCard button.follow{
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(228, 105, 105);
+    width: 140px;
+}
+
+.footerCard button.follow:hover{
+    color: white;
+    background-color: rgba(236, 112, 112, 0.685);
+    transition: all .3s ease-in-out;
+}
+
+.footerCard button.follow:hover .btn_follow_text{
+    display: none;
+}
+
+.footerCard button.follow:hover .btn_notFollow{
+    display: block;
+}
+
+.footerCard button .btn_notFollow{
+    display: none;
+}
+
